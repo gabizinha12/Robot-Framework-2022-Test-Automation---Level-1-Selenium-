@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.1 (Python 3.10.0 on win32)" generated="20221129 11:50:13.048" rpa="false" schemaversion="3">
+<suite id="s1" name="Crm" source="C:\development\robot-scripts\crm">
+<suite id="s1-s1" name="Tests" source="C:\development\robot-scripts\crm\Tests">
+<suite id="s1-s1-s1" name="Crm" source="C:\development\robot-scripts\crm\Tests\Crm.robot">
+<test id="s1-s1-s1-t1" name="Should be able to add new customer" line="15">
+<kw name="Begin Web Test" library="Common" type="SETUP">
+<kw name="Log" library="BuiltIn">
+<arg>Starting the test case....</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20221129 11:50:13.215" level="INFO">Starting the test case....</msg>
+<status status="PASS" starttime="20221129 11:50:13.215" endtime="20221129 11:50:13.215"/>
+</kw>
+<status status="PASS" starttime="20221129 11:50:13.214" endtime="20221129 11:50:13.215"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>Sign In</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20221129 11:50:13.215" level="INFO">Clicking link 'Sign In'.</msg>
+<msg timestamp="20221129 11:50:13.216" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20221129 11:50:13.216" level="FAIL">No browser is open.</msg>
+<status status="FAIL" starttime="20221129 11:50:13.215" endtime="20221129 11:50:13.225"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Login</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20221129 11:50:13.225" endtime="20221129 11:50:13.225"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=email-id</arg>
+<arg>${VALID_LOGIN_EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221129 11:50:13.226" endtime="20221129 11:50:13.226"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=password</arg>
+<arg>${VALID_LOGIN_PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221129 11:50:13.226" endtime="20221129 11:50:13.226"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id=submit-id</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221129 11:50:13.226" endtime="20221129 11:50:13.226"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Our Happy Customers</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20221129 11:50:13.226" endtime="20221129 11:50:13.226"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>id=new-customer</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221129 11:50:13.226" endtime="20221129 11:50:13.226"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Add Customer</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20221129 11:50:13.226" endtime="20221129 11:50:13.226"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=EmailAddress</arg>
+<arg>janedoe@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221129 11:50:13.226" endtime="20221129 11:50:13.226"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=FirstName</arg>
+<arg>Jane</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221129 11:50:13.227" endtime="20221129 11:50:13.227"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=LastName</arg>
+<arg>Doe</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221129 11:50:13.227" endtime="20221129 11:50:13.227"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=City</arg>
+<arg>Dallas</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221129 11:50:13.227" endtime="20221129 11:50:13.227"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>id=StateOrRegion</arg>
+<arg>TX</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="NOT RUN" starttime="20221129 11:50:13.227" endtime="20221129 11:50:13.227"/>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>gender</arg>
+<arg>female</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<status status="NOT RUN" starttime="20221129 11:50:13.227" endtime="20221129 11:50:13.227"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>name=promos-name</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221129 11:50:13.227" endtime="20221129 11:50:13.227"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>Submit</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221129 11:50:13.227" endtime="20221129 11:50:13.227"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Success! New customer added.</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20221129 11:50:13.228" endtime="20221129 11:50:13.228"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>Sign Out</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221129 11:50:13.228" endtime="20221129 11:50:13.228"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Signed Out</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20221129 11:50:13.228" endtime="20221129 11:50:13.228"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221129 11:50:13.228" endtime="20221129 11:50:13.228"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20221129 11:50:13.228" endtime="20221129 11:50:13.228"/>
+</kw>
+<kw name="End Web Test" library="Common" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221129 11:50:13.229" endtime="20221129 11:50:13.229"/>
+</kw>
+<status status="PASS" starttime="20221129 11:50:13.228" endtime="20221129 11:50:13.229"/>
+</kw>
+<doc>This is some basic info about the test</doc>
+<tag>1006</tag>
+<tag>Contacts</tag>
+<tag>Smoke</tag>
+<status status="FAIL" starttime="20221129 11:50:13.214" endtime="20221129 11:50:13.229">No browser is open.</status>
+</test>
+<doc>This is some basic info about the suite</doc>
+<status status="FAIL" starttime="20221129 11:50:13.064" endtime="20221129 11:50:13.229"/>
+</suite>
+<status status="FAIL" starttime="20221129 11:50:13.063" endtime="20221129 11:50:13.230"/>
+</suite>
+<status status="FAIL" starttime="20221129 11:50:13.049" endtime="20221129 11:50:13.231"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">1006</stat>
+<stat pass="0" fail="1" skip="0">Contacts</stat>
+<stat pass="0" fail="1" skip="0">Smoke</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Crm">Crm</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Tests">Crm.Tests</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="Crm">Crm.Tests.Crm</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
